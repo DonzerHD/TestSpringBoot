@@ -37,7 +37,7 @@ public class ProduitController {
 		return produitService.modifier(id, produit);
 	}
 	
-	@DeleteMapping("/delete")
+	@DeleteMapping("/delete/{id}")
 	public String delete(@PathVariable Long id) {
 		return produitService.supprimer(id);
 	}
